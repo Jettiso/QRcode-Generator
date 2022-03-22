@@ -1,0 +1,87 @@
+/* IMPORT FONT MONTSERRAT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #3498db;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    height: 260px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 530px;
+
+}
+
+header h1 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+header p {
+    margin-top: 5px;
+    color: #474747;
+    font-size: 16px;
+}
+
+.wrapper .form {
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.form input {
+    border: 1px solid #999;
+}
+
+.form button {
+    margin-top: 20px;
+    background: #3498db;
+    font-size: 17px;
+}
+
+.wrapper .qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.5s 0.5s ease;
+}
+
